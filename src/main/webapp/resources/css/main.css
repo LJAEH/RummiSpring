@@ -1,0 +1,74 @@
+* { box-sizing: border-box;}
+
+body{ margin : 0; }  /* body 태그가 가지고 있는 기본 margin 제거 */ 
+
+/* div{ border: 1px solid black;} */
+
+main{
+    width: 1140px;
+    margin: auto;
+}
+
+#member-profile{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+
+#nickname{ /* 닉네임 */
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -3px;
+}
+
+.title {
+    margin-top:200px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    font-weight : bold;
+    color : green;
+}
+.container-btn{
+	display : flex;
+	flex-direction: column;
+    text-align: center;
+    align-items: center
+
+    
+}
+
+.btn{
+    font-size: 20px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid rgb(204, 204, 204);
+    margin-bottom: 20px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    display : flex;
+    justify-content: center;
+    text-align : center;
+    align-items: center;
+}
+
+.btn > a {
+    text-decoration: none;
+    color : black;
+    font-size: 20px;
+    text-align : center;
+    align-items: center;
+    line-height: 20px;
+}
+
+.btn:hover > a{
+    font-weight: bold;
+    color : rgb(33, 150, 192);
+    background-color: rgb(248, 248, 248);
+}
+
+
