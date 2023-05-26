@@ -28,7 +28,8 @@
 							<button>Login</button>
 						</section>
 						<section>
-							
+<!-- 							 <a>회원가입</a>
+							 <a>아이디/비밀번호 찾기</a> -->
 						</section>	
 					</fieldset>
 				</form> 
@@ -37,19 +38,19 @@
 	 
 	 	<c:otherwise>
 			<section>
-				<a href="${contextPath}/member/myPage/profile">
-					<c:if test="${empty loginMember.img}">
-						<img src="${contextPath}/resources/images/user.png" id="member-profile">
-					</c:if>
-					<c:if test="${!empty loginMember.img}">
-						<img src="${contextPath}${loginMember.img}" id="member-profile">
-					</c:if>
-			 	</a>
 			 	<div class="my-info">
-					 <div>
-						 <a href="${contextPath}/member/myPage/info" id="nickname">${loginMember.nick}</a>
-						 <a href="${contextPath}/member/logout" id="logout-btn">로그아웃</a>
-					 </div>
+				 
+				 	<a href="${contextPath}/member/myPage/profile">
+						<c:if test="${empty loginMember.img}">
+							<img src="${contextPath}/resources/images/user.png" id="member-profile">
+						</c:if>
+						<c:if test="${!empty loginMember.img}">
+							<img src="${contextPath}${loginMember.img}" id="member-profile">
+						</c:if>
+		 			</a>
+					 <a href="${contextPath}/member/myPage/info" id="nickname">${loginMember.nick}</a>
+					 <a href="${contextPath}/member/logout" id="logout-btn nickname">로그아웃</a>
+				 
 			 	</div>
 			</section>
 			

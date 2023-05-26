@@ -9,9 +9,19 @@ main{
     margin: auto;
 }
 
+section{
+	display : flex;
+	
+}
+
+.my-info{
+	display : flex;
+	
+}
+
 #member-profile{
-    width: 64px;
-    height: 64px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 
@@ -19,7 +29,7 @@ main{
 #nickname{ /* 닉네임 */
     color: black;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     letter-spacing: -3px;
 }
